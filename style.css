@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background: linear-gradient(135deg, #ff6b9c, #c44569);
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+nav {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.logo-text {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+
+.hero {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: contain !important;  
+        background-position: center !important;
+        height: 100vh !important;
+        padding: 20vh 1rem 10vh !important;
+    }
+}
+
+.hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.hero-content p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+
+.cta-button {
+    padding: 14px 30px;
+    border-radius: 50px;
+    background: #ff1493;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+
+.services {
+    padding: 80px 1.5rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+
+.about {
+    padding: 80px 1.5rem;
+    background: #f8f9fa;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: center;
+}
+
+
+.contact {
+    padding: 80px 1.5rem;
+}
+
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #222;
+    color: white;
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px 0;
+}
+
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+
+.container {
+  width: 100%;
+  padding: 15px;
+}
+
+@media (max-width: 430px) {
+  .container {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
